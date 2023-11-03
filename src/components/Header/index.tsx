@@ -17,15 +17,16 @@ const links: NavLinks[] = [
 
 export default function Header({ name }: any) {
   return (
-    <header className='flex space-x-2'>
+    <header className='flex justify-between'>
       <Logo />
-      {links.map((link) => (
-        <Menu key={link.href} href={link.href} title={link.title} />
-      ))}
-      <div>
-        Welcome{' '}
-        <span className='bg-fuchsia-600 px-3 py-1 tracking-wider text-slate-100'>
-          {name}!
+
+      <div className='flex space-x-4'>
+        {links.map((link) => (
+          <Menu key={link.href} href={link.href} title={link.title} />
+        ))}
+        <h1 className='ml-1'>Welcome: </h1>
+        <span className='rounded-sm bg-fuchsia-600 px-2 py-1 tracking-wider text-slate-100'>
+          <p>{name}!</p>
         </span>
       </div>
     </header>

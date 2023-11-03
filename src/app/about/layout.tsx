@@ -1,3 +1,5 @@
+import './about.css';
+
 export default function AboutLayout({
   children,
 }: {
@@ -5,7 +7,9 @@ export default function AboutLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='h-screen w-full bg-black text-white'>{children}</body>
+      <body>
+        <main className='h-screen bg-slate-400'>{children}</main>
+      </body>
     </html>
   );
 }
