@@ -1,7 +1,6 @@
 'use client';
 import Header from '@/components/Header';
 import Image from 'next/image';
-import manWorking from '../../public/manWorking.webp';
 
 export default function Home() {
   const name = 'Mitchell';
@@ -13,10 +12,11 @@ export default function Home() {
       </div>
       <div className='w-full'>
         <Image
-          src={manWorking}
+          src={'/images/manWorking.webp'}
           alt='man working'
           quality={100}
           fill
+          priority
           className='object-cover object-top md:object-center'
         />
       </div>

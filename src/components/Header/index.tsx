@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Logo from './Logo';
 import type { NavLinks } from './Menu';
 import Menu from './Menu';
@@ -25,9 +26,12 @@ export default function Header({ name }: any) {
           <Menu key={link.href} href={link.href} title={link.title} />
         ))}
         <h1 className='ml-1'>Welcome: </h1>
-        <span className='rounded-sm bg-fuchsia-600 px-2 py-1 tracking-wider text-slate-100'>
+        <Link
+          href='/profile'
+          className='cursor-pointer rounded-sm bg-fuchsia-600 px-2 py-1 tracking-wider text-slate-100 hover:bg-fuchsia-400'
+        >
           <p>{name}!</p>
-        </span>
+        </Link>
       </div>
     </header>
   );
