@@ -1,4 +1,4 @@
-Learn Next.js 14 — Full course for beginners [3 hours] 2023 2:32:09
+Learn Next.js 14 — Full course for beginners [3 hours] 2023 2:54:09
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
